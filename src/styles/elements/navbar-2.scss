@@ -1,0 +1,84 @@
+@import "../../app/variable/variable";
+
+
+.navbar-2{ 
+	    height: 4rem;
+	    box-shadow:0 1px 4px rgba(0,0,0,.15);
+	    padding:$value0+6px $value10+5px;
+	    position: $relative;
+	    z-index:1;
+	.lft-nav-2{
+		display: $inline-block;
+		a.menu-toggle{
+			color: #717274;
+			padding:$value10 $value10+5px $value0+3px $value0;
+			display: $inline-block;
+    		font-weight: $extra-weight;
+    		font-size: 1.125rem;
+    		border-right:1px solid #eee;
+    		i{
+    			font-size: 30px;
+    			color: #717274;
+    			margin:-1px $value10+5px 0;
+    			float: $left;
+    			line-height: $fuild-container;
+    		}
+    		&:hover, &:hover i{
+    			color:#0576b9;
+    		}
+		}
+		a.home-user{
+			color: #717274;
+			padding:$value10 $value0;
+			display: $inline-block;
+    		font-weight: $bold-weight;
+    		letter-spacing: -1px;
+    		font-size: 1.4rem;
+    		i{
+    			font-size: 30px;
+    			color: #717274;
+    			margin:-1px $value10+5px 0;
+    			float: $left;
+    			line-height: $fuild-container;
+    		}
+    		&:hover, &:hover i{
+    			color:#0576b9;
+    		}
+		}
+	}
+	.rit-nav-2{
+		float: $right;
+		ul{
+			float: $right;
+			@include ulstyles;
+			li{
+				text-align: $center;
+				display:$inline-block;
+				a{
+					padding: 0 $value10+5px;
+    				display: $block;
+					color: #717274;
+					i{
+						font-size: 24px;
+						line-height: 150%;
+    					height: 26px;
+					}
+					span{
+						font-size: .8rem;
+						font-weight: $bold-weight;
+						display: $block;
+					}
+					img{
+						width: 30px;
+					}
+				}
+				&:hover a{
+					color:#0576b9;
+				}
+			}
+			li:last-child a{
+				padding-right: $value0;
+			}
+		}
+	}
+}

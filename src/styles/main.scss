@@ -1,0 +1,271 @@
+@import "variables";
+@import "mixins";
+@import "bootstrap/scss/bootstrap";
+@import "bourbon/app/assets/stylesheets/bourbon";
+@import "helpers/height";
+@import "helpers/margin";
+@import "helpers/padding";
+@import "helpers/width";
+@import "helpers/text";
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+body,
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  position: relative;
+  @include font-size(14px);
+}
+
+::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+}
+
+@each $key, $value in $default-palette {
+  [data-navbar="#{$key}"],
+  [data-sidebar="#{$key}"],
+  [data-background="#{$key}"] {
+    a,
+    .btn {
+      color: map-get($value, "color");
+    }
+  }
+}
+
+input,
+select {
+  font-family: $font-family;
+}
+
+@include selection {
+  background-color: map-get($bootstrap-colors, "warning");
+}
+
+.hidden {
+  display: none;
+}
+
+//hide pseudo elements
+.no-before {
+  &:before {
+    display: none !important;
+  }
+}
+
+.no-after {
+  &:after {
+    display: none !important;
+  }
+}
+
+.loading {
+  .pace {
+    display: none;
+  }
+}
+
+.separator {
+  flex: 1;
+}
+
+//hide elements for fake loader
+.loading body {
+  .navbar,
+  .top-navigation,
+  .jumbotron,
+  .left-sidebar-placeholder,
+  .left-sidebar,
+  .right-sidebar,
+  .theme-config-backdrop,
+  .left-sidebar-backdrop,
+  .right-sidebar-backdrop,
+  *::before,
+  *::after,
+  > .container-fluid {
+    visibility: hidden !important;
+  }
+}
+
+//backdrops
+.left-sidebar-backdrop {
+  @include backdrop($zindex-navbar-fixed + 5);
+}
+
+.right-sidebar-backdrop {
+  @include backdrop($zindex-navbar-fixed + 4);
+}
+
+//default backgrounds and colors for every layout
+@each $key, $value in $default-palette {
+  [data-layout][data-background="#{$key}"] {
+    html:not(.loading) & {
+      background-color: map-get($value, "background-color");
+      color: map-get($value, "color");
+    }
+  }
+}
+
+.sidebar-heading {
+  display: none;
+}
+
+@for $i from 1 through 6 {
+  .sidebar-heading {
+    &[data-sidebar-heading="#{$i}"] {
+      display: block;
+    }
+  }
+}
+
+.page {
+  > .row {
+    margin-bottom: $side-margin;
+    padding-bottom: 0;
+  }
+  //angular 4 only
+  [ng-version] > .row {
+    margin-bottom: $side-margin;
+    padding-bottom: 0;
+  }
+}
+
+.no-bg,
+.bg-transparent {
+  background-color: transparent !important;
+}
+$colors: map-merge(map-merge(map-merge($colors, $bootstrap-colors), $social-media-colors), $background-colors
+);
+
+@each $key, $value in $colors {
+  .bg-#{$key} {
+    background-color: $value !important;
+  }
+
+  .bg-hover-#{$key} {
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $value !important;
+    }
+  }
+
+  .color-#{$key} {
+    color: $value !important;
+  }
+
+  .color-hover-#{$key} {
+    &:hover,
+    &:active,
+    &:focus {
+      color: $value !important;
+    }
+  }
+
+  .border-color-#{$key} {
+    color: $value !important;
+  }
+
+  .border-color-hover-#{$key} {
+    &:hover,
+    &:active,
+    &:focus {
+      color: $value !important;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+// custom css 25-9-2017
+
+.btn-green:hover, .btn-green:focus {
+  background:#22a972 !important;
+}
+.selectbox{
+  min-width: 55%;
+  max-width: 100%;
+  width: auto;
+  a.btn{
+    text-align: left;
+    @include border-radius(3px);
+    border-color: #ccc;
+    padding: 10px;
+    font-weight: 400;
+    span{
+      float: right;
+    }
+  }
+  a:focus{
+    border-color:#5c5a5a;
+  }
+  a.btn.dropdown-toggle:after{
+    position: absolute;
+    right: 10px;
+    text-align: right;
+    top: 15px;
+    left:auto;
+  }
+  a.btn.dropdown-toggle + ul.dropdown-menu{
+    right: 0;
+    left: 0;
+    padding: 10px 0;
+    background:#fcfcfc;
+    li{
+        a{
+            margin:0 10px;
+        }
+    }
+  }
+}
+.transform-auto{
+  text-transform: none!important;
+}
+.main-navbar-2{
+    width: 100%;
+    float: left; 
+}
+/* .main-left-sidebar-2{
+  width: 280px;
+  float: left; 
+} */
+.col.main {
+  padding:0;
+  position:relative;
+}
+
+.displayToggle
+{
+  display: none;
+}
+.row.main-div.rgba-display:after{
+  position:absolute;
+  left: 280px;
+  right: 0;
+  top:61px;
+  z-index: 9;
+  bottom:0;
+  background:rgba(0,0,0, .1);
+  content: "";
+}

@@ -1,0 +1,118 @@
+@import "../../app/variable/variable";
+
+a:hover{
+	transition:0.3s ease;
+}
+#left-sidebar2{
+	width:280px;
+	float:$left;
+	background: #f9f9f9;
+	min-height:$fuild-container;
+	overflow-y:auto;
+	border-right:1px solid #ddd;
+	.user-signed{
+		height: 4.1rem;
+		float: $left;
+		width: $fuild-container;
+		a{
+			padding:$value10+2px $value10*2;
+			float: $left;
+			height:$fuild-container;
+			width: $fuild-container;
+			img{
+				display:$inline-block;
+				width: 40px;
+				@include border-radius(3px);
+				margin-right: $value10;
+				float: $left;
+			}
+			span{
+				text-transform: uppercase;
+			    margin-bottom: 0;
+			    color: #717274;
+			    line-height:150%;
+			    float: $left;
+			    font-weight: $semibold-weight;
+			    letter-spacing: .5px;
+			    font-size: .8rem;
+			    b{
+				    text-transform: lowercase;
+				    color: #2c2d30;
+				    font-weight: $extra-weight;
+				    display: $block;
+				    font-size:16px;
+				    letter-spacing: -1px;
+			    }
+			}
+			&:hover{
+				background:#e8e8e8;
+			}
+		}
+	}
+}
+.signed-ul{
+	width:$fuild-container;
+	float:left;
+		ul{
+			@include ulstyles;
+			float: $left;
+			width:$fuild-container;
+			li{
+				padding:$value0+5px $value10*2;
+				display: block;
+				a{
+					color: #2c2d30;
+				    padding: .25rem 0;
+				    display: block;
+				    font-size: 15px;
+				    line-height: 100%;
+				    font-weight: $extra-weight;
+				    &:hover{
+				    	text-decoration: underline!important;
+				    }
+				    i{
+				    	font-size: 23px;
+					    width: 31px;
+					    float: $left;
+					    margin: -2px 0;
+				    }
+				}
+				span{
+					text-transform: uppercase;
+				    margin-bottom: $value0;
+				    color: #717274;
+				    font-weight: $normal-weight;
+				    letter-spacing: .5px;
+				    font-size: .8rem;
+				}
+			}
+		}
+	}
+
+.foot-links-small{
+			float: $left;
+			width:$fuild-container;
+			margin:$value10*3 $value0;
+			ul{
+				@include ulstyles;
+				float: $left;
+				width:$fuild-container;
+				li{
+					display: block;
+					padding:$value0+5px $value10*2;
+					a{
+						font-size: .9rem;
+    					color: #717274;
+    					font-weight: $bold-weight;
+    					&:hover{
+    						text-decoration: underline!important;
+    					}
+					}
+					span.made-heart{ 
+						color: #d72b3f;
+					    font-size: .9rem;
+					    margin-bottom: 0;
+					}
+				}
+			}
+		}

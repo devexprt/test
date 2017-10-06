@@ -1,0 +1,553 @@
+<div class="main-settings"> 
+  <h1 class="main-hdng"><i class="fa fa-user-o" aria-hidden="true"></i> &nbsp;Account</h1>
+
+                <div class="account-tabs">
+                    <ul class="nav nav-pills nav-pills-rounded">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link active" data-toggle="tab" data-target="#settings-fst">Settings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link" data-toggle="tab" data-target="#notifications-sec">Notifications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link" data-toggle="tab" data-target="#profile-third">Profile</a>
+                        </li>
+                        
+                    </ul>
+                    <ul class="nav nav-pills nav-pills-rounded pull-right">
+                    	<li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" data-toggle="tab" data-target="#workspace-frth">Workspace Settings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" data-toggle="tab" data-target="#accesslogs-fivth">Access Logs</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="settings-fst">
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
+          Password
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        <div class="inside-passwd">
+        	<form>
+        		<ul>
+        			<li class="row">
+        				<div class="form-group col-md-5">
+					      	<label>Current password</label>
+					      	<input class="form-control" placeholder="" type="password">
+					    </div>
+        			</li>
+        			<li class="row">
+        				<div class="form-group col-md-5">
+					      	<label>New password</label>
+					      	<input class="form-control" placeholder="" type="password">
+					    </div>
+        			</li>
+        			<li>&nbsp;</li>
+        			<li><a href="javascript:voit(0)" class="btn btn-green">Save Password</a></li>
+        			<li>&nbsp;</li>
+        			<li>
+        				<p>Can't remember your current password?</p>
+        				<a href="javascript:voit(0)" class="btn btn-default btn-outline">Reset your password by email</a>
+        			</li>
+        		</ul>
+        	</form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Two-Factor Authentication<small>Two-Factor authentication is <b>inactive</b> for your account.</small>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+      	<div class="two-factors"> 
+      		<p>Protect your Slack account with an extra layer of security by requiring access to your phone. Once configured, you'll be required to enter <b>both your password and an authentication code from your mobile phone</b> in order to sign into your Slack account.
+      		<br><br>
+      		Learn more at our <a href="javascript:voit(0)">two-factor authentication help page</a>
+      		<br><br>
+      		</p>
+      		<a href="javascript:voit(0)" class="btn btn-default btn-outline">Setup Two-Factor Authentication</a>
+      		<small class="note"><b>Note:</b> Activating two-factor authentication will <a href="javascript:voit(0)">sign you out of all other sessions</a>.</small>
+      	</div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Email Address<small>Your email address is <b>johnsmith@gmail.com</b></small>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        <div class="inside-passwd">
+        	<form>
+        		<ul>
+        			<li class="row">
+        				<div class="form-group col-md-5">
+					      	<label>Current password</label>
+					      	<input class="form-control" placeholder="" type="password">
+					    </div>
+        			</li>
+        			<li class="row">
+        				<div class="form-group col-md-5">
+					      	<label>New Email Address</label>
+					      	<input class="form-control" placeholder="" type="email">
+					    </div>
+        			</li>
+        			<li>&nbsp;</li>
+        			<li><a href="javascript:voit(0)" class="btn btn-green">Update Email</a></li>
+        		</ul>
+        	</form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingfour">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+          Username
+        </a>
+      </h4>
+    </div>
+    <div id="collapsefour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfour">
+      <div class="panel-body">
+        <div class="inside-passwd username">
+        	<form>
+        		<ul>
+        			<li class="row">
+        				<div class="form-group col-md-4">
+					      	<input class="form-control" placeholder="johnsmith" type="email" style="width:65%;float: left;">
+					      	<a style="float: right;padding: 14px 30px;font-size: 17px;" href="javascript:voit(0)" class="btn btn-green">Save</a>
+					    </div>
+        			</li>
+        			<li>
+        				<p>Usernames are not part of your profile, and are only required by Slack for technical reasons. Your username is mostly invisible to others, but you can change it if you want to.
+<br><br>
+Usernames must be all lowercase. They cannot be longer than 21 characters and can only contain letters, numbers, periods, hyphens, and underscores.
+<br><br>
+<b>Note that you cannot change your username more than twice per hour</b>. Choose wisely.</p>
+        			</li>
+        		</ul>
+        	</form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="notifications-sec">
+                            <p class="top-para">Choose when you’d like to receive push notifications on both the desktop and mobile apps.</p>
+                            <div class="noti-div">
+                            	<form class="row">
+                            		<h2 class="col-md-12 main-hdng">Desktop Notifications</h2>
+                            		<div class="form-group col-md-6 m-t-10">
+									    <label>Notify me about...</label>
+									    <div class="btn-group selectbox" style="width:100%;min-width:100%;">
+							                <a class="btn dropdown-toggle btn-select form-control" data-toggle="dropdown" href="#">All new messages<span class="caret"></span></a>
+							                <ul class="dropdown-menu">
+							                  <li><a href="javascript:void(0)">All new messages</a></li>
+							                  <li><a href="javascript:void(0)">Direct messages, mention, and keywprds</a></li>
+							                  <li><a href="javascript:void(0)">Nothing</a></li>
+							                </ul>
+							            </div>	
+                            		</div>
+                            		<div class="form-group col-md-6 m-t-10">
+									    <label>Sound</label>
+									    <div class="btn-group selectbox m-r-5" style="width:78%;min-width:78%;">
+							                <a class="btn dropdown-toggle btn-select form-control" data-toggle="dropdown" href="#">Sound<span class="caret"></span></a>
+							                <ul class="dropdown-menu">
+							                  <li><a href="javascript:void(0)">Ding</a></li>
+							                  <li><a href="javascript:void(0)">Boing</a></li>
+							                  <li><a href="javascript:void(0)">Drop</a></li>
+							                  <li><a href="javascript:void(0)">Ta-da</a></li>
+							                  <li><a href="javascript:void(0)">Plink</a></li>
+							                </ul>
+							            </div>
+							            <a href="javascript:voit(0)" class="btn btn-green"><i class="ion-volume-medium"></i> Preview</a>
+                            		</div>
+                            	</form>
+                            </div>
+                            <div class="noti-div">
+                            	<form class="row">
+                            		<h2 class="col-md-12 main-hdng">When I'm not active on desktop...</h2>
+                            		<div class="form-group col-md-6 m-t-10">
+									    <p class="size-big">After you’ve been inactive on desktop for a set period of time, Slack will start sending your notifications to your mobile devices.</p>									    
+                            		</div>
+                            		<div class="form-group col-md-6 m-t-10">
+									    <div class="chos-sending">
+									    	<ul>
+									    		<li>
+									    			<input type="radio" name="sending-start" id="immediatly">
+									    			<label for="immediatly">Start sending mobile notifications immediately</label>
+									    		</li>
+									    		<li>
+									    			<input type="radio" name="sending-start" id="after-noti">
+									    			<label for="after-noti">Start sending mobile notifications after…</label>
+									    		</li>
+									    	</ul>
+									    </div>
+									    <div class="btn-group selectbox" style="width:100%;min-width:100%;">
+							                <a class="btn dropdown-toggle btn-select form-control" data-toggle="dropdown" href="#">2 Minutes<span class="caret"></span></a>
+							                <ul class="dropdown-menu">
+							                  <li><a href="javascript:void(0)">2 minutes</a></li>
+							                  <li><a href="javascript:void(0)">5 minutes</a></li>
+							                  <li><a href="javascript:void(0)">10 minutes</a></li>
+							                </ul>
+							            </div>
+                            		</div>
+                            	</form>
+                            </div>
+                            <div class="noti-div">
+                            	<form class="row">
+                            		<h2 class="col-md-12 main-hdng">Additional Settings</h2>
+                            		<div class="panel-group col-md-12" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#email-preferences" aria-expanded="true" aria-controls="email-preferences" class="collapsed">
+          Email Preferences<small>Slack can send email notifications when you’re away so you don’t miss a beat. You can also decide if there are any additional updates you’d like to receive.</small>
+        </a>
+      </h4>
+    </div>
+    <div id="email-preferences" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        <div class="inside-email-pre">
+        	<h4>Email Notifications</h4>
+        	<p>When you’re busy or not online, Slack can send you email notifications for any new direct messages or mentions of your name.
+        	</p>
+        	<p class="m-b-0">Send me email notifications:</p>
+        	<ul class="m-b-20">
+        		<li>
+					<input type="radio" name="sendemail-noti" id="sendemail1">
+					<label for="sendemail1">Once every 15 minutes</label>
+				</li>
+				<li>
+					<input type="radio" name="sendemail-noti" id="sendemail2">
+					<label for="sendemail2">Once an hour at most</label>
+				</li>
+				<li>
+					<input type="radio" name="sendemail-noti" id="sendemail3">
+					<label for="sendemail3">Never</label>
+				</li>
+        	</ul>
+        	<h4>Email News & Updates</h4>
+        	<p>From time to time, we’d like to send you emails with interesting news about Slack and your workspace. You can choose which of these updates you’d like to receive:</p>
+        	<ul class="m-b-20">
+        		<li>
+					<input type="checkbox" name="checkbox-news" id="check-newsupdate">
+					<label for="check-newsupdate">Send me emails with Slack news and tips	</label>
+				</li>
+				<li>
+					<input type="checkbox" name="checkbox-news" id="check-newsupdate2">
+					<label for="check-newsupdate2">Send me weekly email updates with news about my workspace (Owners & Admins only)</label>
+				</li>
+        	</ul>
+        	<p>If you opt out of the above, note that we’ll still send you important administrative emails, such as password resets.</p>
+        	<p>We will use this email address: <b>johnsmith@gmail.com</b> (<a href="javascript:voit(0)">change address</a>).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title m-b-0">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#my-keywords" aria-expanded="false" aria-controls="my-keywords">
+          My Keywords<small>Show a badge in my channel list when someone uses one of my keywords:</small>
+        </a>
+      </h4>
+    </div>
+    <div id="my-keywords" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body p-t-0">
+      	<div class="keywords-body"> 
+      		<form class="form-group row">
+      			<div class="col-md-10">
+      				<textarea class="form-control"></textarea>
+      				<small class="m-b-20">Use commas to separate each keyword. Keywords are not case sensitive.</small>
+      				<a href="javascript:voit(0)" class="btn btn-green">Save</a>
+      			</div>
+      		</form>
+      	</div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#marking-mes" aria-expanded="false" aria-controls="marking-mes">
+          Marking Messages as Read<small>By default, Slack marks messages as read as soon as you view the channel or DM. You can choose to leave messages unread until you have seen the oldest unread message.</small>
+        </a>
+      </h4>
+    </div>
+    <div id="marking-mes" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        <div class="inside-email-pre">
+        	<ul class="m-b-20">
+        		<li>
+					<input type="radio" name="read-msgs" id="read-msgs1">
+					<label for="read-msgs1">Default: automatically scroll me to the oldest unread message and mark the channel as having been read.</label>
+				</li>
+				<li>
+					<input type="radio" name="read-msgs" id="read-msgs2">
+					<label for="read-msgs2">Do not scroll me to the oldest unread message, but still mark the messages as having been read when I switch.</label>
+				</li>
+				<li>
+					<input type="radio" name="read-msgs" id="read-msgs3">
+					<label for="read-msgs3">Do not scroll me or automatically mark messages as read — wait until I’ve seen the oldest unread message.</label>
+				</li>
+        	</ul>
+        	<a href="javascript:voit(0)" class="btn btn-green">Save setting</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingfour">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#threads-tab" aria-expanded="false" aria-controls="threads-tab">
+          Threads <small>By default, threads follow the notification settings of the channel they’re in. You can choose to receive a notification for every new reply if you’d like.</small>
+        </a>
+      </h4>
+    </div>
+    <div id="threads-tab" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfour">
+      <div class="panel-body">
+        <div class="inside-email-pre">
+        	<ul class="m-b-20">
+        		<li>
+					<input type="checkbox" name="" id="check-thread">
+					<label for="check-thread">Notify me about every reply to threads I follow</label>
+				</li>
+        	</ul>
+        	<a href="javascript:voit(0)" class="btn btn-green">Save setting</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                            	</form>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="profile-third">
+                            <div class="inside-workspace">
+
+      <span class="pro-acunt-img"><img src="../../assets/images/pro-acunt.png">
+      <a href="javascript:void(0)" class="m-t-10">John Smith</a>
+      </span>
+
+      <div class="pro-ac-btns">
+        <a href="javascript:void(0)" data-toggle="modal" data-target="#edit-profile-pop" class="btn btn-default btn-outline">Edit Profile</a>
+        <a routerLink="/account-settings/account-settings" class="btn btn-default btn-outline"><i data-toggle="tooltip" data-placement="bottom" data-original-title="Account settings" class="ion-gear-a"></i></a> 
+      </div>
+      <div class="foot-workspace">
+        <ul class="foot-main-ul">
+          <li>
+            <div class="lft-foot-work">Timezone</div>
+            <div class="rit-foot-work">
+              <p>10:05 AM local time (<a href="javascript:voit(0)">change</a>)</p>
+            </div>
+            <div class="lft-foot-work">Role</div>
+            <div class="rit-foot-work">
+              <p>Owner of John Smith</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="workspace-frth">
+                            <div class="in-works-space">
+                            	<h2>Your Workspace Owner and Admins</h2>
+                            	<div class="usrself col-md-12">
+                            		<div class="row">
+                            			<div class="col-sm-10">
+                            				<span><img class="d-flex mr-2" src="../../assets/images/user.png" width="36px"></span>
+                            				<div class="your-name">
+                            					<h4>You <i class="fa fa-circle" aria-hidden="true"></i> <span>nmnmnmnm</span></h4>
+                            					<p>johnsmith@gmail.com</p>
+                            				</div>
+                            			</div>
+                            			<div class="col-sm-2">
+                            				<p class="pri-own">Primary Owner</p>
+                            			</div>
+                            		</div>
+                            	</div>
+                            	<a routerLink="/welcome/welcome" class="btn btn-link">View complete directory</a>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="accesslogs-fivth">
+                            <div class="accesslog-body">
+                              <p class="size-big m-b-10">Security starts with knowledge. This page lists details about access to your account. If you notice a problem, you can <a routerLink="/reset/reset">sign out of all sessions</a> except for your current one.</p>
+                              <ul>
+                                <li>
+                                  <div class="lft-date-sec">
+                                    <h3>Thursday, October 5th</h3>
+                                  </div>
+                                  <div class="rit-abt-time">
+                                    <h3>9:10 AM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP 122.173.182.21. There were 3 additional logins from this device, with the most recent at 9:15 AM.</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="lft-date-sec">
+                                    <h3>Wednesday, October 4th</h3>
+                                  </div>
+                                  <div class="rit-abt-time">
+                                    <h3>2:23 PM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP 122.173.43.176. There were 22 additional logins from this device, with the most recent at 6:08 PM.</p>
+                                    <div class="clearfix m-t-30"></div>
+                                    <h3>9:22 AM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP 122.173.43.176. There were 38 additional logins from this device, with the most recent at 11:54 AM.</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="lft-date-sec">
+                                    <h3>Tuesday, October 3rd</h3>
+                                  </div>
+                                  <div class="rit-abt-time">
+                                    <h3>5:38 PM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP 122.173.45.214. There were 10 additional logins from this device, with the most recent at 6:03 PM.</p>
+                                    <div class="clearfix m-t-30"></div>
+                                    <h3>3:18 PM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP 122.173.45.214.</p>
+                                    <div class="clearfix m-t-30"></div>
+                                    <h3>9:21 AM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP 122.173.45.214. There were 7 additional logins from this device, with the most recent at 12:10 PM.</p>
+                                    <div class="clearfix m-t-30"></div>
+                                    <h3>9:06 AM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP 122.173.45.214. There were 2 additional logins from this device, with the most recent at 9:06 AM.</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="lft-date-sec">
+                                    <h3>Monday, October 2nd</h3>
+                                  </div>
+                                  <div class="rit-abt-time">
+                                    <h3>5:14 PM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP: 122.173.37.170 (India, Chandigarh; Airtel Broadband). There were 23 additional logins from this device, with the most recent at 6:17 PM.</p>
+                                    <div class="clearfix m-t-30"></div>
+                                    <h3>9:18 AM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP: 122.173.37.170 (India, Chandigarh; Airtel Broadband). There were 11 additional logins from this device, with the most recent at 2:25 PM.</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="lft-date-sec">
+                                    <h3>Friday, September 29th</h3>
+                                  </div>
+                                  <div class="rit-abt-time">
+                                    <h3>1:41 PM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP: 122.173.132.190 (India, Chandigarh; Airtel Broadband). There were 6 additional logins from this device, with the most recent at 5:21 PM.</p>
+                                    <div class="clearfix m-t-30"></div>
+                                    <h3>10:49 AM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP: 122.173.132.190 (India, Chandigarh; Airtel Broadband). There were 2 additional logins from this device, with the most recent at 10:49 AM.</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="lft-date-sec">
+                                    <h3>Thursday, September 28th</h3>
+                                  </div>
+                                  <div class="rit-abt-time">
+                                    <h3>4:10 PM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP 122.173.32.39.  There were 3 additional logins from this device, with the most recent at 5:51 PM.</p>
+                                    <div class="clearfix m-t-30"></div>
+                                    <h3>9:42 AM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP 122.173.32.39.  There were 5 additional logins from this device, with the most recent at 1:50 PM.</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="lft-date-sec">
+                                    <h3>Wednesday, September 27th</h3>
+                                  </div>
+                                  <div class="rit-abt-time">
+                                    <h3>6:19 PM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP 122.173.78.183. There were 2 additional logins from this device, with the most recent at 6:19 PM.</p>
+                                    <div class="clearfix m-t-30"></div>
+                                    <h3>5:07 PM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP 122.173.78.183. There was one additional login from this device, at 6:31 PM.</p>
+                                    <div class="clearfix m-t-30"></div>
+                                    <h3>9:52 AM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP 122.173.78.183. There were 14 additional logins from this device, with the most recent at 2:52 PM.</p>
+                                    <div class="clearfix m-t-30"></div>
+                                    <h3>9:39 AM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP 122.173.78.183. There were 2 additional logins from this device, with the most recent at 9:39 AM.</p>
+                                    <div class="clearfix m-t-30"></div>
+                                    <h3>9:11 AM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP 122.173.78.183.</p>
+                                    <div class="clearfix m-t-30"></div>
+                                    <h3>9:11 AM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP 122.173.78.183. There were 2 additional logins from this device, with the most recent at 11:10 AM.</p>
+                                    <div class="clearfix m-t-30"></div>
+                                    <h3>9:10 AM PM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP 122.173.78.183. There were 2 additional logins from this device, with the most recent at 9:10 AM.</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="lft-date-sec">
+                                    <h3>Tuesday, September 26th</h3>
+                                  </div>
+                                  <div class="rit-abt-time">
+                                    <h3>5:45 PM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP: 122.173.26.149 (India, Punjab; Airtel Broadband). There was one additional login from this device, at 5:45 PM.</p>
+                                    <div class="clearfix m-t-30"></div>
+                                    <h3>5:34 PM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP: 122.173.26.149 (India, Punjab; Airtel Broadband). There were 4 additional logins from this device, with the most recent at 6:51 PM.</p>
+                                    <div class="clearfix m-t-30"></div>
+                                    <h3>1:32 PM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP: 122.173.190.79 (India, Chandigarh; Airtel Broadband). There was one additional login from this device, at 1:33 PM.</p>
+                                    <div class="clearfix m-t-30"></div>
+                                    <h3>11:14 AM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP: 122.173.190.79 (India, Chandigarh; Airtel Broadband). There were 2 additional logins from this device, with the most recent at 11:14 AM.</p>
+                                    <div class="clearfix m-t-30"></div>
+                                    <h3>11:05 AM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP: 122.173.190.79 (India, Chandigarh; Airtel Broadband). There were 15 additional logins from this device, with the most recent at 1:46 PM.</p>
+                                    <div class="clearfix m-t-30"></div>
+                                    <h3>9:24 AM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP: 122.173.190.79 (India, Chandigarh; Airtel Broadband). There were 7 additional logins from this device, with the most recent at 10:47 AM.</p>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="lft-date-sec">
+                                    <h3>Monday, September 25th</h3>
+                                  </div>
+                                  <div class="rit-abt-time">
+                                    <h3>6:26 PM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP 122.173.133.127.</p>
+                                    <div class="clearfix m-t-30"></div>
+                                    <h3>1:40 PM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP 122.173.239.245.  There were 10 additional logins from this device, with the most recent at 5:11 PM.</p>
+                                    <div class="clearfix m-t-30"></div>
+                                    <h3>1:35 PM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP: 122.173.222.126 (India, Chandigarh; Airtel Broadband). There was one additional login from this device, at 1:35 PM.</p>
+                                    <div class="clearfix m-t-30"></div>
+                                    <h3>9:55 AM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP 122.173.53.129. There were 9 additional logins from this device, with the most recent at 12:41 PM.</p>
+                                    <div class="clearfix m-t-30"></div>
+                                    <h3>9:29 AM with the <abbr><i class="fa fa-desktop" aria-hidden="true"></i>Slack Web App </abbr></h3>
+                                    <p>IP 122.173.104.128.  There were 4 additional logins from this device, with the most recent at 9:30 AM.</p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+</div>

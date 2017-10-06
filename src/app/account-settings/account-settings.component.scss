@@ -1,0 +1,555 @@
+ // import files
+@import "../../app/variable/variable"; 
+
+.main-settings{
+	padding:$value10*2 13.9%;
+	width:100%;
+	background:#f9f9f9;
+	min-height:$fuild-container;
+	h1.main-hdng{
+		font-size: 2rem;
+        line-height:$fuild-container;
+        letter-spacing: -1px;
+        font-weight: $extra-weight;
+        color: #2c2d30;
+        margin-top:$value10+5px;
+    	i{
+    		color:#2ea664;
+    		font-size: $value10*2+5px;
+    		margin: $value0+4px;
+    		float: $left;
+    	}
+	}
+	h2.main-hdng{
+		font-size: 1.5rem;
+    	line-height:$fuild-container;
+    	letter-spacing: -1px;
+    	font-weight: $extra-weight;
+	}
+	.account-tabs{
+		margin-top:$value30;
+	}
+	.tab-content{
+		background:$white;
+		border:1px solid #ddd;
+	}
+	.nav-pills{
+		position: $relative;
+		margin:-1px 0;
+		width: $auto;
+		display: $inline-block;
+		li.nav-item{
+			background:$none;
+			display: $inline-block;
+			a{
+				background:transparent;
+				font-weight: $bold-weight;
+				@include border-radius(5px 5px 0 0);
+				color:#0576b9;	
+				border-top:1px solid transparent;
+				border-left:1px solid transparent;
+				border-right:1px solid transparent;
+				padding:12px 22px 11px;
+				font-size: 17px;
+				&:hover{
+					text-decoration: underline!important;
+				}
+				&.active{
+					background:$white;
+					color:#222;
+					font-weight: $bold-weight;
+					border-color:#ddd;
+				}
+			}
+		}
+	}
+	ul.nav-pills-rounded.pull-right{
+		li{
+			a{
+				color: #717274;
+			}
+		}
+	}
+}
+#accordion{
+	h4.panel-title{
+		position:$relative;
+		a{
+			color: #2c2d30;
+			font-weight: $bold-weight;
+			font-size:$value10+9px;
+			&:before{
+				content: "Close";
+				float:$right;
+				position: $absolute;
+			    top: $value0;
+			    right: $value0;
+			    text-transform: lowercase;
+			    padding: $value0+8px  $value10+4px  $value0+9px;
+			    font-size: $value10+5px;
+			    background: #f9f9f9;
+			    z-index: 1;
+			    @include border-radius(5px);
+			    border:1px solid #ddd;
+			    color: #2c2d30;
+			    font-weight: $bold-weight;
+			}
+		}
+		a.collapsed{
+			&:before{
+				content: "Expand";
+			}
+		}
+		a:hover:before{
+			background:$white;
+			color:#0576b9;
+		}
+		small{
+			display:block;
+			font-size: 1.08rem;
+			margin:$value10*2 $value0 $value0;
+			b{
+				font-weight: $semibold-weight;
+			}
+		}
+	}
+	.panel.panel-default {
+	    padding: $value10+5px $value0;
+	    border-bottom: 1px solid #eee;
+	}
+	.panel-body{
+		padding-top:$value10*2;
+		.inside-passwd{
+			ul{
+				list-style: $none;
+				padding:$value0;
+				margin:$value0;
+				li{
+					margin-bottom:$value10+5px;
+					display: block;
+					a.btn.btn-green{
+						color:$white;
+					}
+					label{
+						font-weight: $extra-weight;
+					    margin: 0 0 .25rem;
+					    display: $block;
+					    font-size: 1rem;
+					}
+					p{
+						font-size: 1.125rem;
+						margin:$value0+5px $value10+5px 0 0;
+						float: $left;
+					}
+					a.btn-outline{
+						margin-bottom:$value0;
+						@include border-radius(5px);
+					    border:1px solid #ddd;
+					    color: #2c2d30;
+					    background:#f9f9f9;
+					    font-weight: $bold-weight;
+					    line-height: $fuild-container;
+					    font-size: $value10+5px;
+					    text-transform: $none;
+					    &:hover{
+					    	background:$white;
+					    	color:#0576b9;
+					    }
+					}
+				}
+				li:last-child{
+					margin-bottom:$value0;
+				}
+			}
+		}
+		.two-factors{
+			a.btn-default{
+				margin-bottom:$value0;
+				@include border-radius(5px);
+				border:1px solid #ddd;
+				background:#f9f9f9;
+				color: #2c2d30;
+				font-weight: $bold-weight;
+				line-height: $fuild-container;
+				font-size: $value10+5px;
+				text-transform: $none;
+				&:hover{
+					background:$white;
+					color:#0576b9;
+				}
+			}
+			p{
+				font-size:  1.08rem;
+				margin:$value0+5px $value10+5px 0 0;
+				b{
+					font-weight: $bold-weight;
+				}
+				a{
+					color: #0576b9;
+					&:hover{
+						text-decoration: underline!important;
+					}
+				}
+			}
+			small.note{
+				font-size: 1rem;
+				color: #717274!important;
+				display:$block;
+				margin-top:$value10;
+				a{
+					color: #0576b9;
+					&:hover{
+						text-decoration: underline!important;
+					}
+				}
+			}
+		}
+		.inside-passwd.username{
+			ul{
+				li{
+					p{
+						font-size: .9rem;
+					    line-height: 1.25rem;
+					    color: #717274;
+					    float: $none;
+					    width:80%;
+					    margin-top: $value10*6;
+					    clear: both;
+					    b{
+					    	font-weight: $bold-weight;
+					    }
+					}
+				}
+			}
+		}
+	}
+}
+#notifications-sec{
+	p.top-para{
+		margin-bottom: 2rem;
+		font-size: 1.125rem;
+	}
+	.noti-div{
+		margin-bottom:$value10*5;
+		.form-group{
+			label{
+				font-weight: $bold-weight;
+				display: block;
+			}
+		}
+		.chos-sending{
+			ul{
+				list-style:$none;
+				padding:$value0; 
+				margin:$value0;
+				li{
+					display: $block;
+					input[type=radio]{
+						float:$left;
+						margin:$value0+5px $value10 0 0;
+					}
+					label{
+						font-weight: $normal-weight;
+						font-size:1rem;					}
+				}
+			}
+		}
+	}
+}
+p.size-big{
+	font-size:1.125rem;
+}
+.inside-email-pre{
+	p{
+		font-size: 1.125rem;
+		color: #2c2d30;
+	}
+	h4{
+		font-size: 1.1rem;
+		font-weight: $bold-weight;
+	}
+	ul{
+		list-style:$none;
+		padding:$value0; 
+		margin:$value0;
+		li{
+			display: $block;
+			input[type=radio], input[type=checkbox]{
+				float:$left;
+				margin:$value0+5px $value10 0 0;
+			}
+			label{
+				font-weight: $normal-weight;
+				font-size:1rem;					
+			}
+		}
+	}
+	p{
+		a{
+			color: #0576b9;
+			&:hover{
+				text-decoration: underline !important;
+			}
+		}
+	}
+}
+.keywords-body{
+	textarea{
+		resize-x: $none;
+		min-height: 50px;
+	}
+	small{
+		font-size: .9rem;
+	    line-height: 1.25rem;
+	    color: #717274;
+	    display: block;
+	}
+}
+
+input[type=text], input[type=email], input[type=password], select, textarea{
+	border-radius: 5px !important;
+	border-color: #a0a0a2 !important;
+}
+input[type=text]:hover, input[type=email]:hover, input[type=password]:hover, select:hover, textarea:hover{
+	border-color: #717274 !important;
+}
+
+.inside-workspace{
+    padding:10px;
+    text-align: $center;
+    .pro-acunt-img{
+        text-align: $center;
+        display: $inline-block;
+        max-width: 350px;
+        width: 90%;
+        @include border-radius(5px);
+        img{
+            max-width:$fuild-container;
+        }
+        a{
+            color: $black-color;
+            text-align: $center;
+            display: $block;
+            font-size: $value10+8px;
+            font-weight: $semibold-weight;
+            i{
+                font-size: 12px;
+            }
+        }
+    }
+    .pro-ac-btns{
+        margin-top: $value10*2;
+        text-align: $center;
+        position:$relative;
+        a.btn-default{
+            background:#f1f1f1;
+            text-transform: $capitalize;
+            font-weight: $bold-weight;
+            border-color:#ccc;
+            font-size: $value10+4px;
+            padding: $value10 $value10+5px;
+            margin: 0 1px;
+            i{
+                font-size: $value10+7;
+                line-height: $fuild-container;
+            }
+        }
+        a.btn-default:hover{
+            color: #0576b9;
+            background: $white;
+        }
+    }
+    .foot-workspace{
+        margin:$value10+5px $value0 $value10*3; 
+        display: $inline-block;
+        width: 55%;
+        text-align: $left;
+        ul.foot-main-ul {
+            list-style: $none;
+            padding:$value0;
+            margin:$value0;
+            li{
+                width: $fuild-container;
+                float: $left;
+                padding:5px 0;
+                border-top:1px solid #ddd;
+                .lft-foot-work{
+                    float:$left;
+                    width: 40%;
+                    color: #a0a0a2;
+                    font-size: .9375rem;
+                }
+                .rit-foot-work{
+                    float:$left;
+                    width: 60%;
+                    position:$relative;
+                    p{
+                        color: $black-color;
+                        font-weight: $normal-weight;
+                        margin:$value10/5 $value0;
+                        font-size: .9375rem;
+                        a{
+                            color: $black-color;
+                            font-weight: $normal-weight;
+                        }
+                        a:hover{
+                            text-decoration: underline !important;
+                            color:#0576b9;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.in-works-space{
+	h2{
+		font-size: 1.25rem;
+    	line-height: 1.5rem;
+    	margin:$value10+5px $value0 $value10*2;
+    	font-weight: $bold-weight;
+	}
+	.usrself{
+		border-bottom:1px solid #eee;
+		span{
+			float: $left;
+		}
+		.your-name{
+			h4{
+				font-weight: 900;
+			    color: #2c2d30;
+			    font-size: 1.125rem;
+			    margin:0;
+			    i{
+			    	font-size: 10px;
+			    }
+			    span{
+			    	font-weight:$normal-weight;
+			    	float: $none;
+			    }
+			}
+			p{
+				font-weight:$normal-weight;
+				font-size: 1.125rem;
+				color: #717274;
+			}
+		}
+		p.pri-own{
+			color: #2c2d30;
+    		font-size: .9rem;
+		}
+	}
+	.btn-link{
+			font-size: $value10+6px;
+	}
+}
+.btn-link{
+	color:#0576b9;
+	font-weight: $normal-weight;
+	&:hover{
+		text-decoration: underline !important;
+	}
+}
+
+.accesslog-body{
+	p.size-big{
+		a{
+			color:#0576b9;
+		}
+	}
+	ul{
+		@include ulstyles;
+		li{
+			padding:$value10*3 $value0;
+			display: $block;
+			border-top:1px solid #eee;
+			.lft-date-sec{
+				vertical-align: top;
+				width: 34%;
+				display: $inline-block;
+				padding-right:$value10*2;
+				h3{
+					font-size: 1.125rem;
+					font-weight: $extra-weight;
+				}
+			}
+			.rit-abt-time{
+				vertical-align: top;
+				width: 65%;
+				display: $inline-block;
+				h3{
+					color: #2c2d30;
+					font-size: 1.125rem;
+					font-weight: $normal-weight;
+					abbr{
+						cursor: help;
+						margin-left: $value10;
+						text-decoration: underline dotted;
+						i{
+							font-size: $value10*2;
+							margin-right: $value0+6px;
+							color: #777;
+						}
+					}
+				}
+				p{
+					color:#717274;
+					font-size: 1rem;
+				}
+			}
+		}
+		li:last-child{
+			border-bottom:1px solid #eee;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

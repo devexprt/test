@@ -1,0 +1,75 @@
+ // import files
+@import "../../app/variable/variable"; 
+
+.main-settings{
+    padding:$value10*2;
+    width:99.1%;
+    background:#f9f9f9;
+    min-height:$fuild-container;
+    h1.main-hdng{
+    	font-size: 2rem;
+        line-height:$fuild-container;
+        letter-spacing: -1px;
+        font-weight: $extra-weight;
+        color: #2c2d30;
+        margin-top:$value10+5px;
+        i{
+        	color:#ff9000;
+        	font-size: $value10*3;
+        	margin:0 $value0+4px 0;
+        	float: $left;
+        }
+    }
+    .reset-main{
+        background:$white;
+        padding:$value10*3;
+        margin-top:$value10+5px;
+        @include border-radius(5px);
+        border:1px solid #e8e8e8;
+        box-shadow: 0 1px 0 rgba(0,0,0,.25);
+        h3{
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+            margin-bottom: .5rem;
+            font-weight: $bold-weight;
+        }
+        p{
+            font-size: 1.125rem;
+            margin: $value0;
+        }
+        ul{
+            list-style: inside !important;
+            padding:$value0 $value0 $value0 $value10*2;
+            margin:$value10/2 $value0 $value10;
+            li{
+                font-size: 1.125rem;
+            }
+        }
+        h5{
+            font-size: 1.125rem;
+            font-weight: $bold-weight;
+        }
+        .pro-con-pas{
+            input[type=password]{
+                max-width:$value10*20;
+                width: $fuild-container;
+                float: $left;
+                padding: $value10;
+                margin-right: $value10;
+            }
+            a.btn-warning{
+                font-size: 0.85rem;
+                padding: $value10 $value10+5px;
+                background:#ff9000;
+            }
+        }
+    }
+}
+
+input[type=text], input[type=email], input[type=password], select, textarea{
+    border-radius: 5px !important;
+    border-color: #a0a0a2 !important;
+}
+input[type=text]:hover, input[type=email]:hover, input[type=password]:hover, select:hover, textarea:hover{
+    border-color: #717274 !important;
+}
